@@ -5,7 +5,7 @@
   --slate-700: #334155;
   --white-soft: #f8fafc;
   --white: #ffffff;
-  --accent: #2dd4bf; /* teal */
+  --accent: #2dd4bf;
   --accent-dark: #14b8a6;
   --text-muted: #64748b;
   --radius: 12px;
@@ -24,7 +24,6 @@ body {
 
 .accent { color: var(--accent-dark); }
 
-/* Navbar */
 #navbar {
   position: sticky;
   top: 0;
@@ -47,11 +46,7 @@ body {
 
 .logo { color: var(--white); font-weight: 700; font-size: 1.2rem; }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 28px;
-}
+.nav-links { list-style: none; display: flex; gap: 28px; }
 
 .nav-links a {
   color: var(--white-soft);
@@ -72,7 +67,6 @@ body {
 .nav-links a:hover { color: var(--accent); }
 .nav-links a:hover::after { width: 100%; }
 
-/* Hero */
 .hero {
   background: linear-gradient(135deg, var(--slate-900), var(--slate-700));
   color: var(--white);
@@ -115,7 +109,6 @@ body {
 }
 .btn-secondary:hover { background: var(--slate-800); color: var(--white); }
 
-/* Sections */
 .section { padding: 90px 24px; }
 .section-alt { background: var(--white); }
 .section-container { max-width: var(--max-width); margin: 0 auto; }
@@ -137,7 +130,6 @@ body {
 
 .about-text { max-width: 700px; font-size: 1.05rem; color: var(--slate-700); }
 
-/* Skills */
 .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; }
 .skill-tag {
   background: var(--slate-900);
@@ -150,7 +142,6 @@ body {
 }
 .skill-tag:hover { background: var(--accent-dark); transform: translateY(-3px); }
 
-/* Timeline */
 .timeline { position: relative; padding-left: 30px; border-left: 2px solid #e2e8f0; }
 .timeline-item { position: relative; margin-bottom: 40px; }
 .timeline-item:last-child { margin-bottom: 0; }
@@ -166,7 +157,6 @@ body {
 .timeline-meta { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px; }
 .timeline-content p { color: var(--slate-700); font-size: 0.97rem; }
 
-/* Projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -183,7 +173,6 @@ body {
 .project-card h3 { margin-bottom: 8px; color: var(--slate-800); }
 .project-card p { color: var(--text-muted); font-size: 0.92rem; }
 
-/* Contact */
 .contact-container { text-align: center; }
 .contact-text { color: var(--text-muted); margin-bottom: 28px; }
 .contact-links { display: flex; gap: 16px; justify-content: center; }
@@ -196,7 +185,6 @@ footer {
   font-size: 0.85rem;
 }
 
-/* Mobile-first responsive tweaks */
 @media (max-width: 640px) {
   .nav-links { gap: 14px; }
   .nav-links a { font-size: 0.85rem; }
